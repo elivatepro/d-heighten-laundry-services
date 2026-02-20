@@ -3,21 +3,99 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-black: #0A0A0A;
+  --color-dark-gray: #121212;
+  --color-medium-gray: #1A1A1A;
+  --color-light-gray: #2A2A2A;
+  --color-sunny-yellow: #FFD700;
+  --color-sunny-yellow-hover: #FFC107;
+  --color-sunny-yellow-glow: rgba(255, 215, 0, 0.15);
+  --color-sky-blue: #00B4D8;
+  --color-sky-blue-hover: #0096C7;
+  --color-sky-blue-glow: rgba(0, 180, 216, 0.15);
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #A0A0A0;
+  --color-text-muted: #666666;
+  --color-success: #22C55E;
+  --color-error: #EF4444;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+[data-theme="light"] {
+  --color-black: #FFFFFF;
+  --color-dark-gray: #F8F9FA;
+  --color-medium-gray: #F1F3F4;
+  --color-light-gray: #E8EAED;
+  --color-text-primary: #0A0A0A;
+  --color-text-secondary: #5F6368;
+  --color-text-muted: #9AA0A6;
+  --color-sunny-yellow: #F59E0B;
+  --color-sunny-yellow-hover: #D97706;
+  --color-sunny-yellow-glow: rgba(245, 158, 11, 0.15);
+  --color-sky-blue: #0284C7;
+  --color-sky-blue-hover: #0369A1;
+  --color-sky-blue-glow: rgba(2, 132, 199, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-black);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: var(--color-sunny-yellow);
+  color: #0A0A0A;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-sky-blue);
+  outline-offset: 2px;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-dark-gray);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-gray);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-text-muted);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes pulse-whatsapp {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+.animate-fade-in {
+  animation: fadeIn 0.5s ease forwards;
 }
 
 @layer utilities {
