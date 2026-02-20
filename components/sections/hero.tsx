@@ -82,7 +82,7 @@ export function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-8 pt-32 lg:px-8 lg:pt-40">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-6 pt-24 sm:pb-8 sm:pt-32 lg:px-8 lg:pt-40">
         {/* Main content area */}
         <div className="max-w-3xl lg:max-w-2xl">
           {/* Badge */}
@@ -104,7 +104,7 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-hero"
+            className="mt-4 font-display text-4xl font-bold leading-[1.1] tracking-tight text-white sm:mt-6 sm:text-5xl md:text-6xl lg:text-hero"
           >
             Your Wardrobe,{" "}
             <span
@@ -124,7 +124,7 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="mt-6 max-w-xl text-base leading-relaxed text-[#A0A0A0] md:text-lg"
+            className="mt-3 max-w-xl text-sm leading-relaxed text-[#A0A0A0] sm:mt-6 sm:text-base md:text-lg"
           >
             Professional laundry care that gives you back your time. We pick up,
             clean, and deliver &mdash; so you can focus on what actually matters.
@@ -136,11 +136,11 @@ export function Hero() {
             variants={fadeUp}
             initial="hidden"
             animate="visible"
-            className="mt-8 flex flex-col gap-3 sm:flex-row sm:gap-4"
+            className="mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:gap-4"
           >
             <Link
               href="#pricing-calculator"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-yellow px-8 py-4 text-sm font-semibold text-[#0A0A0A] transition-all hover:bg-brand-yellow-hover hover:scale-105 md:text-base"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-yellow px-6 py-3 text-sm font-semibold text-[#0A0A0A] transition-all hover:bg-brand-yellow-hover hover:scale-105 sm:px-8 sm:py-4 md:text-base"
             >
               Get Your Free Quote
               <ArrowRight
@@ -150,7 +150,7 @@ export function Hero() {
             </Link>
             <Link
               href="/pricing"
-              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[rgba(0,180,216,0.5)] bg-[rgba(0,180,216,0.08)] px-8 py-4 text-sm font-semibold text-[#00B4D8] backdrop-blur-sm transition-all hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.15)] hover:scale-105 md:text-base"
+              className="inline-flex items-center justify-center gap-2 rounded-full border-2 border-[rgba(0,180,216,0.5)] bg-[rgba(0,180,216,0.08)] px-6 py-3 text-sm font-semibold text-[#00B4D8] backdrop-blur-sm transition-all hover:border-[#00B4D8] hover:bg-[rgba(0,180,216,0.15)] hover:scale-105 sm:px-8 sm:py-4 md:text-base"
             >
               See Our Pricing
             </Link>
@@ -163,19 +163,19 @@ export function Hero() {
           variants={fadeUp}
           initial="hidden"
           animate="visible"
-          className="mt-16 grid grid-cols-2 gap-3 sm:grid-cols-4 sm:gap-4 lg:mt-20 lg:max-w-4xl"
+          className="mt-8 grid grid-cols-2 gap-2 sm:mt-16 sm:grid-cols-4 sm:gap-4 lg:mt-20 lg:max-w-4xl"
         >
           {stats.map((stat) => {
             const Icon = stat.icon;
             return (
               <div
                 key={stat.label}
-                className="group rounded-2xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.04)] p-4 backdrop-blur-md transition-all duration-300 hover:border-[rgba(255,215,0,0.25)] hover:bg-[rgba(255,255,255,0.07)] sm:p-6"
+                className="group rounded-2xl border border-[rgba(255,255,255,0.08)] bg-[rgba(255,255,255,0.04)] p-3 backdrop-blur-md transition-all duration-300 hover:border-[rgba(255,215,0,0.25)] hover:bg-[rgba(255,255,255,0.07)] sm:p-6"
               >
-                <div className="mb-2 flex h-9 w-9 items-center justify-center rounded-xl bg-[rgba(255,215,0,0.1)] sm:mb-3 sm:h-10 sm:w-10">
-                  <Icon size={18} className="text-brand-yellow" />
+                <div className="mb-1.5 flex h-8 w-8 items-center justify-center rounded-lg bg-[rgba(255,215,0,0.1)] sm:mb-3 sm:h-10 sm:w-10 sm:rounded-xl">
+                  <Icon size={16} className="text-brand-yellow" />
                 </div>
-                <p className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
+                <p className="text-lg font-bold text-white sm:text-2xl md:text-3xl">
                   {stat.value}
                 </p>
                 <p className="mt-0.5 text-xs text-[#A0A0A0] sm:text-sm">
