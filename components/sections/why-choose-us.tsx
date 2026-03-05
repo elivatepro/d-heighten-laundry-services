@@ -29,7 +29,7 @@ const valueProps = [
     icon: Home,
     title: "We Come To You",
     description:
-      "Free pickup and delivery across Ilorin city. Schedule when it works for you \u2014 morning, afternoon, or evening.",
+      "Pickup and delivery available across Ilorin city. Schedule when it works for you \u2014 morning, afternoon, or evening.",
   },
 ];
 

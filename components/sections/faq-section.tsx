@@ -10,7 +10,7 @@ const faqItems = [
   {
     question: "How does pickup and delivery work?",
     answer:
-      "Simple. You schedule a pickup time that works for you. Our team comes to collect your laundry — anywhere in Ilorin city. Once cleaned, we deliver it right back to your door. The best part? Pickup and delivery are completely free.",
+      "Simple. You schedule a pickup time that works for you. Our team comes to collect your laundry — anywhere in Ilorin city. Once cleaned, we deliver it right back to your door.",
   },
   {
     question: "How long does it take?",

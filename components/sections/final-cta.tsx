@@ -8,7 +8,7 @@ import { useIntersection } from "@/hooks/use-intersection";
 import { cn } from "@/lib/utils/cn";
 
 const reassuranceBadges = [
-  "Free pickup & delivery",
+  "Pickup & delivery available",
   "No commitments",
   "Transparent pricing",
 ];

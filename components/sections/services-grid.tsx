@@ -50,10 +50,10 @@ const SERVICES: ServiceCard[] = [
   },
   {
     icon: Truck,
-    title: "Free Pickup & Delivery",
+    title: "Pickup & Delivery",
     description:
-      "We come to you \u2014 anywhere in Ilorin city. Schedule at your convenience. It\u2019s free.",
-    price: "FREE",
+      "We come to you \u2014 anywhere in Ilorin city. Schedule at your convenience.",
+    price: "Available",
     href: "/services",
   },
   {

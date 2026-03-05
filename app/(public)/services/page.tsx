@@ -9,7 +9,7 @@ import { PageHeader } from "@/components/shared/page-header";
 export const metadata: Metadata = {
   title: "Our Laundry Services",
   description:
-    "Explore D'heighten Laundry's full range of professional services — wash & fold, full laundry, pressing, shoe cleaning, wet cleaning, and free pickup & delivery in Ilorin.",
+    "Explore D'heighten Laundry's full range of professional services — wash & fold, full laundry, pressing, shoe cleaning, wet cleaning, and pickup & delivery in Ilorin.",
 };
 
 interface ServiceSection {
@@ -125,9 +125,9 @@ const SERVICES: ServiceSection[] = [
   },
   {
     id: "pickup-delivery",
-    title: "Free Pickup & Delivery",
+    title: "Pickup & Delivery",
     description:
-      "We come to you — no need to leave your home or office. Schedule a convenient pickup time, and we'll collect your laundry, clean it, and bring it back fresh and ready. It's completely free for all service plans within Ilorin city.",
+      "We come to you — no need to leave your home or office. Schedule a convenient pickup time, and we'll collect your laundry, clean it, and bring it back fresh and ready. Available for all service plans within Ilorin city.",
     included: [
       "Schedule your pickup via WhatsApp or phone",
       "We arrive at your door at the agreed time",
@@ -136,9 +136,9 @@ const SERVICES: ServiceSection[] = [
       "We deliver back to your doorstep — fresh and ready",
     ],
     bestFor: "Busy professionals, families, students, and anyone who values their time.",
-    pricing: "FREE",
-    pricingNote: "Included with all service plans",
-    cta: { label: "Schedule a Pickup", href: generateWhatsAppURL("Hi! I'd like to schedule a free pickup.") },
+    pricing: "Available",
+    pricingNote: "With all service plans",
+    cta: { label: "Schedule a Pickup", href: generateWhatsAppURL("Hi! I'd like to schedule a pickup.") },
     image: "/images/pickup.jpg",
     imageAlt: "Laundry pickup and delivery",
   },

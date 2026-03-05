@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | D'heighten Laundry",
   },
   description:
-    "Professional laundry and dry cleaning services in Ilorin, Kwara State. Quality service, affordable pricing, free pickup & delivery.",
+    "Professional laundry and dry cleaning services in Ilorin, Kwara State. Quality service, affordable pricing, pickup & delivery available.",
   keywords: [
     "laundry", "dry cleaning", "Ilorin", "Kwara", "Nigeria",
     "wash and fold", "pickup delivery",

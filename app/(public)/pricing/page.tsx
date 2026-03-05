@@ -66,7 +66,7 @@ const completeLaundryPlans: Plan[] = [
 ];
 
 const completeLaundryFeatures = [
-  "Free pickup & delivery",
+  "Pickup & delivery available",
   "Professional washing & ironing",
   "48-hour turnaround",
   "Careful fabric care",
@@ -98,7 +98,7 @@ const washFoldPlans: Plan[] = [
 ];
 
 const washFoldFeatures = [
-  "Free pickup & delivery",
+  "Pickup & delivery available",
   "Premium washing & drying",
   "Neat folding",
   "48-hour turnaround",
