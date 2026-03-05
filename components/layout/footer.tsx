@@ -148,6 +148,14 @@ export function Footer() {
           <p className="text-sm text-text-muted">
             &copy; 2022-{new Date().getFullYear()} D&apos;heighten Laundry. All rights reserved.
           </p>
+          <div className="flex gap-4 text-sm text-text-muted">
+            <Link href="/privacy-policy" className="transition-colors hover:text-text-primary">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-of-service" className="transition-colors hover:text-text-primary">
+              Terms of Service
+            </Link>
+          </div>
           <p className="text-sm text-text-muted">
             Built with precision by{" "}
             <a

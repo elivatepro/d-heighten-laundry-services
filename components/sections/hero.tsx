@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Clock, Users, Award, Shirt } from "lucide-react";
-import { getYearsOperating } from "@/lib/constants/site";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -18,7 +17,7 @@ const fadeUp = {
 const stats = [
   {
     icon: Award,
-    value: `${getYearsOperating()}+`,
+    value: "3yrs+",
     label: "Years Serving Ilorin",
   },
   {
@@ -28,12 +27,12 @@ const stats = [
   },
   {
     icon: Shirt,
-    value: "100K+",
+    value: "1.5M+",
     label: "Clothes Cleaned",
   },
   {
     icon: Clock,
-    value: "24-48hr",
+    value: "24-72hr",
     label: "Turnaround",
   },
 ];
